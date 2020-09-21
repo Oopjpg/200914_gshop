@@ -31,7 +31,9 @@
 export default {
   methods: {
     goTo (path) {
-      this.$router.replace(path)
+      if (path !== this.$route.path) {
+        this.$router.replace(path)
+      }
     }
   }
 }
