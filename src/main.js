@@ -8,6 +8,8 @@ import App from './App'
 import router from './router/index'
 import store from './store/index'
 import VueAwesomeSwiper from "vue-awesome-swiper";
+import './mock/mockServer' // 加载 mockServer 即可
+
 Vue.use(VueAwesomeSwiper);
 // 注册全局组件标签
 Vue.component(Button.name, Button) // <mt-button>
