@@ -91,10 +91,9 @@
       // 初始化滚动
       _initScroll () {
         // 列表显示之后创建
-        const meauScroll = new BScroll('.menu-wrapper', {
+        new BScroll('.menu-wrapper', {
           click: true
         })
-        console.log(meauScroll)
         this.foodsScroll = new BScroll('.foods-wrapper', {
           probeType: 2, // 惯性滑动不会触发
           click: true
